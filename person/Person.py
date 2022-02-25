@@ -4,10 +4,10 @@ from abc import ABC, abstractmethod
 class Person(ABC):
     Persons = []
 
-    def __init__(self):
-        self.first_name = None
-        self.last_name = None
-        self.phone = None
+    def __init__(self, first_name, last_name, phone):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.phone = phone
 
     def __repr__(self):
         return f"{self.__class__.__name__}('{self.first_name} {self.last_name} {self.phone}')"
